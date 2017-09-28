@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/pushy.css">
+  <link rel="stylesheet" href="css/contactForm.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -30,6 +31,7 @@
   <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="js/my_js.js"></script>
 <!--animated-css-->
 <link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
 <script src="js/wow.min.js"></script>
@@ -50,6 +52,7 @@
 				<li><a href="#services" class="scroll pushy-link">About</a></li>
 				<li><a href="#work" class="scroll pushy-link">Work</a></li> 
 				<li><a href="#contact" class="scroll pushy-link">Contact</a></li>
+			</li>
         </ul>
     </div>
 </nav>  
@@ -63,11 +66,14 @@
       <div class="row">
         <div class="one-half column">
           <h4 class="hero-heading">CG Web Designs</h4>
-          <a class="button button-primary" href="">Button</a>
+          <!--<a class="button button-primary" href="contact">Button</a> -->
         </div>
         <div class="one-half column phones">
           <img class="phone wow fadeInLeft" data-wow-delay="0.3s" src="images/logo_transparent.png">
-          <img class="phone wow fadeInRightBig" data-wow-delay="0.3s" src="">
+          <div class="top-slogan">
+			  <p class="phone wow fadeInLeft" data-wow-delay="0.7s">We provide creative solutions with your business in mind. Our goal is to supply you with a modern, responsive, beautiful website with social integrations.</p>
+   			</div>
+          <!-- <img class="phone wow fadeInRightBig" data-wow-delay="0.3s" src=""> -->
         </div>
       </div>
     </div>
@@ -96,17 +102,17 @@
         </div>
       </div>
     </div>
-    <div class="container">
+   <!-- <div class="container">
 		<div class="one-third column value"><img src="images/HTML5_Badge.png" /></div>
 		<div class="one-third column value"><img src="images/js.png" /></div>
 		<div class="one-third column value"><img src="images/CSS3_logo.png" /></div>
-    </div>
+    </div> --!-->
   </div>
   
     <div class="section categories">
-    <div class="container">
-      <h3 class="section-heading">THIS IS US</h3>
-      <p class="section-description"></p>
+    <div class="aboutbox">
+      <h3 class="section-heading">Meet The Team</h3>
+      <p class="section-description">We are a group of two passionate individuals who love everything tech. <br>In 2017 we decided to create our own business to help the local Kansas City business scene. Our websites are clean, light, and work on every device no matter the size.</p>
       <div class="row">
           <div class="one-half column category">
               <img class="wow fadeInLeft u-max-full-width" data-wow-delay=".2s" src="images/AG.jpg">
@@ -127,7 +133,7 @@
         </div>
       </div>
     </div>
-  </div>
+
 <!--
   <div class="section get-help">
     <div class="container">
@@ -149,6 +155,33 @@
 		 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.897996734689!2d-94.74020638426678!3d38.97199707955938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c094a629e20e17%3A0x3d21943c415c9c7f!2s8639+Hauser+Ct%2C+Lenexa%2C+KS+66215!5e0!3m2!1sen!2sus!4v1506437346161" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 	 </div>
     -->
+</div>
+	<div id="contact">
+		<a class="button button-primary" id="contactbutton">Click Here to contact us!</a>
+	</div>
+					<div id="contactForm">
+
+					  <h1>Keep in touch!</h1>
+					  <small>I'll get back to you as quickly as possible</small>
+
+					  <form action="form-to-email.php" name="myemailform" method="post">
+						<input type="text" name="name" placeholder="Your Name" required=""> 
+						<input type="email" name="email" placeholder="Email" required="">
+						<input type="text" name="subject" placeholder="Subject" required="">
+						<textarea name="message" placeholder="Message" required></textarea>
+						<input class="formBtn" type="submit" value="SEND" name="submit">
+						<input class="formBtn" type="reset" />
+					  </form>
+					</div>
+					<script language="JavaScript">
+						// Code for validating the form
+						// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+						// for details
+						var frmvalidator  = new Validator("myemailform");
+						frmvalidator.addValidation("name","req","Please provide your name"); 
+						frmvalidator.addValidation("email","req","Please provide your email"); 
+						frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+					</script>
 <!--FOOTER-->
 <div class="footer text-center">
 	 <div class="container">
