@@ -79,7 +79,7 @@ div.top-slogan p{
   margin-bottom: 1.2rem;
 }
 .top-nav{
-    margin: 0 1.5% 24px 1.5%;
+    margin: 0 0 24px 1.5%;
     float: right;
     display: block;
 }
@@ -92,7 +92,7 @@ div.top-slogan p{
 .phones {
   position: relative;
 }
-.phone {
+    .phone {
   position: relative;
   max-width: 100%;
   margin: 3rem auto -12rem;
@@ -378,7 +378,7 @@ color: #fff;
     }
 
     .top-nav {
-        margin: 0 -30px 24px 1.5%;
+        margin: 0 0 24px 1.5%;
         float: right;
         display: block;
     }
@@ -387,6 +387,7 @@ color: #fff;
 
 /* For devices less than 550px */
 @media (max-width: 550px) {
+
     .container {
         width: 85%;
         padding: 0;
@@ -394,10 +395,14 @@ color: #fff;
     .section {
         padding: 1rem 0 1rem;
     }
-    .phone {
+    .column,
+    .columns H3{
+        text-align: center;
+    }
+        .phone {
         position: absolute;
-        top: -4.5rem;
-        right: 3rem;
+        top: 2rem;
+        right: 6rem;
         max-height: 362px;
         z-index: 3;
         text-align: center;
@@ -412,14 +417,16 @@ color: #fff;
         }
 
     .hero {
-        padding-bottom: 3rem;
+        padding-bottom: 25rem;
         text-align: left;
-        height: 45rem;
     }
     .values {
         margin: 0, 0, 0, 0:
     }
     div.top-slogan {
+        position: absolute;
+        top: 6rem;
+        right: -4rem;
     }
 
         div.top-slogan p {
@@ -446,26 +453,30 @@ color: #fff;
     padding: 12rem 0 11rem;
   }
    .top-nav{
-    margin: 0 -30px 24px 1.5%;
+    margin: 0 0 24px 1.5%;
     float: right;
     display: block;
 }
 	div.top-slogan{
   position: absolute;
-  top: 19rem;
-  right: -3rem;
+  top: 14rem;
+  right: -7rem;
   max-height: 5%;
   width: 220%;
 }
   .hero {
-    padding-bottom: 12rem;
+    padding-bottom: 5rem;
     text-align: left;
     height: 165px;
   }
+  .hero-heading {
+      position: relative;
+      top: -10rem;
+  }
     .phone {
         position: absolute;
-        top: -7rem;
-        right: 3rem;
+        top: -3rem;
+        right: 12rem;
         max-height: 362px;
         z-index: 3;
         text-align: center;
@@ -490,15 +501,23 @@ color: #fff;
     height: 190px;
   }
 	.top-nav{
-    margin: 0 -30px 24px 1.5%;
-    float: right;
-    display: block;
+        margin: 0 0 24px 1.5%;
+        float: right;
+        display: block;
 }
+    div.top-slogan {
+        position: absolute;
+        top: 14rem;
+        right: -7rem;
+        max-height: 5%;
+        width: 220%;
+    }
   .hero-heading {
     font-size: 2.6rem;
+    top: -15rem;
   }
   .section {
-    padding: 14rem 0 15rem;
+
   }
   .hero {
     padding: 16rem 0 14rem;
@@ -510,7 +529,7 @@ color: #fff;
   }
   .phone {
     top: -8rem;
-    right: 2rem;
+    right: 15rem;
     max-height: 510px;
     text-align: center;
   }
@@ -526,17 +545,20 @@ color: #fff;
 /* Bigger than 1000 */
 @media (min-width: 1000px) {
   .section {
-    padding: 20rem 0 19rem;
+    padding: 20rem 0 10rem;
   }
   .hero {
-    padding: 22rem 0;
+    padding: 22rem 0 5rem;
   }
-  .hero-heading {
-    font-size: 3.0rem;
-  }
+    .hero-heading {
+        font-size: 3.0rem;
+        top: -21rem;
+        right: 2rem;
+    }
   .phone {
     top: -16rem;
     max-height: 615px;
+
   }
   .phone + .phone {
     top: -14rem;
@@ -643,6 +665,15 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
   h4 { font-size: 3.0rem; }
   h5 { font-size: 2.4rem; }
   h6 { font-size: 1.5rem; }
+}
+
+@media (max-width: 550px){
+    h3 {
+        font-size: 2rem;
+    }
+    h5 {
+        font-size: 1rem;
+    }
 }
 
 p {
